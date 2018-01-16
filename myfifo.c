@@ -31,7 +31,9 @@ void myfifo_free(struct myfifo *fifo)
     fifo->data = NULL;
 }
 
-
+/*
+ *internal helper to get used size in fifo
+ */
 inline static unsigned int myfifo_use(struct myfifo *fifo)
 {
 
